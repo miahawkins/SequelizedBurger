@@ -1,0 +1,41 @@
+html {
+	text-align: center;
+	background-color: grey;
+	color: white;
+	
+}
+
+.left {
+	float: left;
+	background-color: aqua;
+}
+
+.right {
+	/*float: left;*/
+	background-color: turquoise;
+	margin-left: 50%;
+}
+
+.bottom {
+	float: clear;
+}
+
+#burgerpic {
+	width: 400px;
+	height: 200px;
+}
+
+button {
+	background-color: #7fa1d8;
+	color: white;
+	border-radius: 12px;
+
+}
+
+#availableBurgers {
+	float: left;
+}
+
+span {
+	float: right;
+}
