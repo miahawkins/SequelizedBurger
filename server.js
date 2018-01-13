@@ -8,6 +8,7 @@ var routes = require("./controllers/burgers_controller.js");
 
 // Start express
 var port = process.env.PORT || 3000;
+console.log(port);
 var app = express();
 
 // Set handlebars as the view engine
@@ -18,7 +19,7 @@ app.set("view engine", "handlebars");
 app.use(bodyParser.urlencoded({extended: false}));
 
 // Make CSS work
-app.use(express.static(process.cwd() + "/public"));
+// app.use(express.static(process.cwd() + "/public"));
 app.use(express.static('public'));
 
 app.use("/", routes);
