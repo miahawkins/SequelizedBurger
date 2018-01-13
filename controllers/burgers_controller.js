@@ -6,12 +6,12 @@ var db = require("../models");
 
 
 router.get("/", function(request, response) {
-
+	console.log("index bull");
 	db.Burger.findAll({
 
 	}).then(function(result) {
 		// response.json(result);
-		var hbsObject = {
+		var hbsObject = { 
 			burgers: result
 		};
 		response.render("index", hbsObject);
